@@ -1,0 +1,278 @@
+/* Global Styles
+======================================== */
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    height: 100%;
+    margin: 0 auto;
+    overflow-x: hidden;
+    width: 100%;
+    -ms-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+}
+
+body {
+    height: 100%;
+    margin: 0 auto;
+    overflow-x: hidden;
+    width: 100%;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+}
+
+/* Typography Styles
+======================================== */
+
+h1, h2, h3, h4, h5, h6 {
+    color: hsl(192, 4%, 26%);
+    font-family: 'Work Sans', Helvetica, sans-serif;
+    font-weight: 700;
+    line-height: 1.25;
+    margin-bottom: 15px;
+    transition: font-size 0.25s ease;
+  }
+  
+h1 {
+    font-size: calc(4.5em / 1.5);
+    line-height: 0.85;
+}
+  
+h2 {
+    font-size: calc(3em / 1.5);
+    margin-top: 10px;
+    line-height: 0.85;
+}
+  
+h3 {
+    font-size: calc(2.25em / 1.5);
+    margin-top: 10px;
+    line-height: 0.85;
+}
+  
+h4 {
+    font-size: calc(1.75em / 1.5);
+    margin-top: 10px;
+    line-height: 0.85;
+}
+  
+h5 {
+    font-size: calc(1.5em / 1.5);
+    margin-top: 10px;
+    line-height: 0.85;
+}
+  
+h6 {
+    font-size: calc(1.25 / 1.5);
+    margin-top: 10px;
+    line-height: 0.85;
+}
+  
+@media(min-width: 720px) {
+    h1 {
+      font-size: calc(4.5em / 1.25);
+    }
+  
+    h2 {
+      font-size: calc(3em / 1.25);
+    }
+  
+    h3 {
+      font-size: calc(2.25em / 1.25);
+    }
+  
+    h4 {
+      font-size: calc(1.75em / 1.25);
+    }
+  
+    h5 {
+      font-size: calc(1.5em / 1.25);
+    }
+  
+    h6 {
+      font-size: calc(1.25em / 1.25);
+    }
+}
+  
+@media(min-width: 1024px) {
+    h1 {
+      font-size: 4.5em;
+    }
+  
+    h2 {
+      font-size: 3em;
+    }
+  
+    h3 {
+      font-size: 2.25em;
+    }
+  
+    h4 {
+      font-size: 1.75em;
+    }
+  
+    h5 {
+      font-size: 1.5em;
+    }
+    h6 {
+      font-size: 1.25em;
+    }
+}
+
+p {
+    color: hsl(192, 4%, 26%);
+    font-family: 'Open Sans', Georgia, serif;
+    font-size: 1em;
+    line-height: 1.25;
+    margin: 0 0 15px;
+}
+  
+a {
+    color: hsl(207, 90%, 61%);
+    font-family: 'Open Sans', Helvetica, sans-serif;
+    font-size: 1em;
+    line-height: 1.25;
+}
+
+li {
+    list-style: none;
+}
+
+/* Structure Styles
+======================================== */
+
+.container {
+    margin: 0 auto;
+    max-width: 1160px;
+    padding: 0 15px;
+}
+
+/* Module Styles
+======================================== */
+
+/* Site Navigation */
+
+.site-header {
+    padding: 30px 15px 0;
+}
+
+.site-header-nav {
+    align-items: center;
+    display: flex;
+}
+
+.site-nav-left, .site-nav-right {
+    align-items: center;
+    display: flex;
+}
+
+.site-nav-right {
+    float: right;
+    margin-left: auto;
+}
+
+.site-nav-left li:not(:first-child), .site-nav-right li {
+    font-family: 'Work Sans';
+    font-weight: 300;
+    font-size: 0.75em;
+    display: none;
+    line-height: 0;
+}
+
+.site-nav-mobile li {
+    display: inline-block;
+}
+
+@media(min-width: 768px) {
+    .site-nav-left li:not(:first-child), .site-nav-right li {
+        display: inline-block;
+    }
+
+    .site-nav-mobile, .site-nav-mobile li {
+        display: none;
+    }
+}
+
+.site-nav-left li:not(:last-child), .site-nav-right li:not(:last-child), .site-nav-mobile li:not(:last-child) {
+    margin-right: 30px;
+}
+
+.site-nav-left .logo {
+    width: 200px;
+}
+
+.site-nav-link {
+    color: hsl(0, 0%, 60%);
+    text-decoration: none;
+}
+
+.site-nav-link:hover {
+    color: hsl(0, 0%, 7%);
+}
+
+.site-nav-link-active {
+    color: hsl(0, 0%, 7%);
+    text-decoration: none;
+}
+
+  /* Banner Information */
+
+.banner-information {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.banner-information p {
+    font-size: 1.5em;
+    font-weight: 200;
+    letter-spacing: 0.0625em;
+    word-spacing: 0.1875em;
+}
+
+.banner-information a {
+    margin: 15px 0;
+    text-decoration: none;
+}
+
+  /* Site Footer */
+
+
+  /* Component Styles
+======================================== */
+
+.button {
+    border-radius: 4px;
+    color: hsl(0, 0%, 100%);
+    display: inline-block;
+    font-family: 'Work Sans', Helvetica, sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: normal;
+    padding: 15px 30px;
+    text-align: center;
+    text-decoration: none;
+    transition: opacity 0.5s ease;
+}
+
+.button:hover {
+    opacity: 0.75;
+    color: hsl(0, 0%, 100%);
+}
+
+.button-primary {
+    background-color: hsl(344, 76%, 53%);
+}
+
+.button-secondary {
+    background-color: hsl(344, 76%, 53%);
+}
+
+.button-small {
+    font-size: 13px;
+    padding: 10px 30px;
+}

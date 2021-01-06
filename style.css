@@ -270,8 +270,8 @@ li {
 
 .main-content-text .image-box {
     width: calc(100%);
-    /*padding: 25px;
-    margin: 25px;*/
+    padding: 25px 0;
+    margin: 25px 0;
     margin-left: auto;
     margin-right: auto;
     vertical-align: middle;

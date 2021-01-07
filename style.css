@@ -195,9 +195,9 @@ li {
     }
 }
 
-@media(max-width: 736px) {
+@media(max-width: 480px) {
     .site-nav-left .logo {
-        width: 100px;
+        width: 75px;
     }
 }
 

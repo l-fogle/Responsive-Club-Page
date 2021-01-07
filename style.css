@@ -243,14 +243,12 @@ li {
   /* Photo Hero */
 
 .photo-hero-text {
-    /*background-color: hsl(344, 76%, 53%);*/
     text-align: center;
     padding: 25px 0;
     margin: 25px 0;
 }  
 
 .photo-hero-text p, .photo-hero-text h3 {
-    /*color: hsl(0, 0%, 100%);*/
     line-height: 1.8;
 }
 
@@ -331,7 +329,7 @@ li {
     color: hsl(0, 0%, 100%);
     display: inline-block;
     font-family: 'Work Sans', Helvetica, sans-serif;
-    font-size: 16px;
+    font-size: 1em;
     font-weight: 700;
     line-height: normal;
     padding: 15px 30px;

@@ -185,7 +185,7 @@ li {
     display: inline-block;
 }
 
-@media(min-width: 768px) {
+@media(min-width: 736px) {
     .site-nav-left li:not(:first-child), .site-nav-right li {
         display: inline-block;
     }

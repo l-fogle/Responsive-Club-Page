@@ -195,6 +195,12 @@ li {
     }
 }
 
+@media(max-width: 736px) {
+    .site-nav-left .logo {
+        width: 100px;
+    }
+}
+
 .site-nav-left li:not(:last-child), .site-nav-right li:not(:last-child), .site-nav-mobile li:not(:last-child) {
     margin-right: 30px;
 }

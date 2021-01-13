@@ -29,7 +29,6 @@ body {
 h1, h2, h3, h4, h5, h6 {
     color: hsl(192, 4%, 26%);
     font-family: 'Work Sans', Helvetica, sans-serif;
-    font-weight: 700;
     line-height: 1.25;
     margin-bottom: 15px;
     transition: font-size 0.25s ease;
@@ -126,7 +125,7 @@ p {
     font-family: 'Open Sans', Georgia, serif;
     font-size: 1em;
     line-height: 1.25;
-    margin: 0 0 15px;
+    margin: 15px 0;
 }
   
 a {
@@ -145,8 +144,14 @@ li {
 
 .container {
     margin: 0 auto;
-    max-width: 1160px;
+    max-width: 1280px;
     padding: 0 15px;
+}
+
+.container:before, .container:after {
+    content: " ";
+    display: table;
+    clear: both;
 }
 
 /* Module Styles
@@ -225,7 +230,7 @@ li {
 }
 
   /* Banner Information */
-
+/*
 .banner-information {
     display: flex;
     flex-direction: column;
@@ -245,30 +250,39 @@ li {
     margin: 15px 0;
     text-decoration: none;
 }
-
+*/
   /* Photo Hero */
 
-.photo-hero-text {
-    text-align: center;
-    padding: 15px 0;
-    margin-top: 20px;
-}  
+.photo-hero {
+    background-color: hsl(228, 26%, 96%);
+    min-height: 600px;
+} 
 
-.photo-hero-text p {
+.photo-hero h1 {
+    margin: 1em 0 40px;;
+}
+
+.photo-hero p {
     line-height: 1.8;
 }
 
+.photo-hero-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 30px 25px;
+}  
+
 .main-content-text {
     text-align: center;
-    padding: 20px 0;
-    margin: 25px 0;
 }
 
 .main-content-text p {
     line-height: 1.8;
 }
 
-.main-content-text h3 {
+.main-content-text h2 {
     line-height: 1.25;
 }
 
@@ -279,13 +293,16 @@ li {
 .main-content-text .image-box {
     width: calc(100%);
     padding: 15px 0;
-    /*margin: 20px 0;*/
     margin-left: auto;
     margin-right: auto;
     vertical-align: middle;
 }
 
   /* Photo Grid */
+
+.photo-grid {
+    margin: 100px 0px 25px;
+}
 
 .flex-container {
     display: flex;
